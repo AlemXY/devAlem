@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*Tabla*/
+.centrado {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    position: relative;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 13rem;
+    height: 15rem;
+    vertical-align: middle;
+    margin-left: 1rem; /* Ajusta la distancia entre la imagen y el texto según tus necesidades */
+}
