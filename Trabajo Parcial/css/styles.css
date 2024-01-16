@@ -61,3 +61,21 @@ hr {
     border: 2px solid;
     margin: 20px 0;
 }
+
+.no-borde {
+    border: none!important;
+}
+
+/*Imagen Detalles*/
+@media screen and (min-width: 768px) {
+    .juego img {
+        height: 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*Arreglos*/
+.marginB {
+    margin-bottom: 2.3rem!important;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Virtual Gaming</title><!--Título de la página-->
+    <link rel="icon" href="img/Icono.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -12,9 +13,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="py-3 container-fluid">
+    <header class="py-3 container-fluid"><!--Navegación-->
         <nav class="navbar-nav container-xl text-center d-flex flex-md-row justify-content-md-between text-white">
-            <h1 class="m-0 display-3 fw-bold">GAME<span class="text-primary">STORE</span></h1>
+            <a href="index.html" class="text-decoration-none"><h1 class="m-0 display-3 fw-bold">GAME<span class="text-primary">STORE</span></h1></a>
             <a class="text-white text-decoration-none fs-2 fw-bold" href="#">PlayStation</a>
             <a class="text-white text-decoration-none fs-2 fw-bold" href="#">Xbox</a>
             <a class="text-white text-decoration-none fs-2 fw-bold" href="#">Productos</a>
@@ -23,81 +24,61 @@
             <a class="text-white text-decoration-none fs-2 fw-bold" href="#">Más</a>
         </nav>
     </header>
-    <div class="portada"></div>
-    <main class="container-xl py-5">
-        <h2 class="m-0 display-3 fw-bold">Nuevos Lanzamientos</h2>
-        <div class="container-xl">
-            <div class="row">
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego1.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Elden Ring</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$39.99</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
+    <main class="container-xl py-5"><!--Videojuego-->
+        <div class="row g-0 pt-5 mb-4">
+            <div class="col-md-8 juego">
+                <img class="img-fluid" src="img/juego6.jpg" alt="imagen juego">
+            </div>
+            <div class="col-md-4 fondo-juego p-5 text-white d-flex flex-column justify-content-center">
+                <h3 class="fs-1 fw-bold">Borderlands 3</h3>
+                <p class="fs-4 mb-0">En Borderlands 3, te conviertes en un Cazador de la Cripta, explorando mundos alienígenas para detener al malvado Calypso Twins. Con un grupo ecléctico de personajes jugables y un sinfín de armas extravagantes, te sumergirás en un caos interplanetario repleto de saqueo, desafíos y humor desenfrenado. ¿Estás listo para un viaje intergaláctico lleno de acción y risas?</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="col col-12 col-sm-12 col-md-5 col-lg-5">
+                        <select name="" id="" class="form-control fs-4 btn-dark p-3">
+                            <option selected="">Método</option>
+                            <option value="">Cuenta Principal</option>
+                            <option value="">Cuenta Secundaria</option>
+                            <option value="">Alquiler</option>
+                        </select>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-5 col-lg-5">
+                        <input type="number" name="" id="" class="form-control fs-4 btn-dark p-3" value="1">
                     </div>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego2.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Enter the Gungeon</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$9.99</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego3.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Crash Bandicoot N Sane Trilogy</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$29.99</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego4.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Hogwarts Legacy</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$25.00</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego5.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Dead Space</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$20.00</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 my-5">
-                    <div class="card mb-3 fondo-juego">
-                        <img class="card-img-top" src="img/juego6.jpg" alt="imagen juego">
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-white fs-2 mb-4">Borderlands 3</h5>
-                            <h6 class="card-subtitle mb-2 text-center text-white fs-2 mb-4">$35.00</h6>
-                            <a href="#" class="btn btn-primary w-100 text-center fs-3 mb-4 py-3">Agregar al carrito</a>
-                            <a href="#" class="btn btn-dark w-100 text-center fs-3 mb-4 py-3">Ver detalles</a>
-                        </div>
+                <a class="btn btn-primary fs-4 fw-bold text-uppercase p-3 mt-4" href="#">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="p-2 col-lg-4 col-sm-12">
+                <div class="card mb-3 fondo-juego">
+                    <img class="card-img-top" src="img/juego6.2.jpg" alt="imagen juego">
+                    <div class="card-body p-5">
+                        <h5 class="card-title text-start text-white fs-2 mb-4">Humor Explosivo y Estilo Visual Único</h5>
+                        <p class="text-white text-start">Adéntrate en el caos intergaláctico de Borderlands 3, donde el humor irreverente alcanza nuevas alturas y se entrelaza perfectamente con un estilo visual único. Explora un vasto paisaje alienígena donde cada rincón está impregnado de detalles visuales vibrantes y un diseño que celebra la extravagancia en todo su esplendor.</p>
                     </div>
                 </div>
             </div>
-        </div>    
+            <div class="p-2 col-lg-4 col-sm-12">
+                <div class="card mb-3 fondo-juego">
+                    <img class="card-img-top" src="img/juego6.3.jpg" alt="imagen juego">
+                    <div class="card-body p-5">
+                        <h5 class="card-title text-start text-white fs-2 mb-4 marginB">Acción Cooperativa y Arsenal Descomunal</h5>
+                        <p class="text-white text-start">Experimenta la acción cooperativa en su máxima expresión mientras te enfrentas a enemigos y jefes épicos en Borderlands 3. El extenso arsenal de armas y equipos te permite personalizar a tu personaje, creando estrategias únicas para saquear y derrotar a tus enemigos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-4 col-sm-12">
+                <div class="card mb-3 fondo-juego">
+                    <img class="card-img-top" src="img/juego6.4.jpg" alt="imagen juego">
+                    <div class="card-body p-5">
+                        <h5 class="card-title text-start text-white fs-2 mb-4 marginB">Narrativa Llena de Personajes Carismáticos y Locura Desenfrenada</h5>
+                        <p class="text-white text-start">Sumérgete en una narrativa llena de personajes carismáticos y locura desenfrenada. Borderlands 3 te lleva a través de un viaje épico lleno de giros inesperados, humor explosivo y misiones emocionantes que te mantendrán enganchado desde el principio hasta el final.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="container-fluid py-5 pb-0">
+    <footer class="container-fluid py-5 pb-0"><!--Pie de página-->
         <nav class="navbar-nav container-xl d-flex flex-md-row justify-content-md-between text-white">
             <div class="row text-white d-flex tex">
                 <div class="col-lg-2 col-xs-12 col-md-4 mb-5 text-center">
