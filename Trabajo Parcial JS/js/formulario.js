@@ -16,7 +16,9 @@ const campos = {
 	nombre: false,
 	correo: false,
 	telefono: false,
-	destino: false
+	destino: false,
+	adultos: false,
+	ninos: false,
 }
 
 const validarFormulario = (e) => {
@@ -45,7 +47,12 @@ const validarFormulario = (e) => {
 	}
 }
 
+const destino = document.getElementById("destino");
+const adultos = document.getElementById("adultos");
 const ninos = document.getElementById("ninos");
+
+destino.addEventListener("change", validarFormulario);
+adultos.addEventListener("change", validarFormulario);
 ninos.addEventListener("change", validarFormulario);
 
 const validarCampo = (expresion, input, campo) => {
@@ -71,14 +78,10 @@ inputs.forEach((input) => {
 	input.addEventListener("blur", validarFormulario);
 });
 
+
+
 formulario.addEventListener("submit", (e) => {
 	e.preventDefault();
-
-	const adultos = document.getElementById("adultos");
-	const ninos = document.getElementById("ninos");
-
-	adultos.addEventListener("change", validarFormulario);
-	ninos.addEventListener("change", validarFormulario);
 
 	if(campos.usuario && campos.nombre && campos.correo && campos.telefono && campos.ninos && campos.adultos && campos.destino){
 		formulario.reset();
